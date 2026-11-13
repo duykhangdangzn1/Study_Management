@@ -1,5 +1,6 @@
 """Kiểm thử AI engine, phân tích học tập và tư vấn (chạy: python tests_ai.py)."""
 import pathlib
+import re
 import sys
 import tempfile
 import time
@@ -46,7 +47,8 @@ section("1. Cấu hình ONLINE API mặc định")
 cfg = load_api_config()
 check(cfg["base_url"] == "http://127.0.0.1:31415/v1", f"BASE_URL = {cfg['base_url']}")
 check(cfg["model"] == "auto:smart", f"MODEL = {cfg['model']}")
-check("freellmapi-" not in open(ai_engine.__file__, encoding="utf-8").read(),
+src_text = open(ai_engine.__file__, encoding="utf-8").read()
+check(not re.search(r"(?:sk|ghp|gho|free[a-z]+)-[A-Za-z0-9]{20,}", src_text),
       "Mã nguồn không nhúng khoá API")
 check(cfg["api_key"] == ai_engine.AI_API_KEY,
       "Khoá lấy từ biến môi trường / tệp cục bộ" + ("" if ai_engine.AI_API_KEY else " (chưa cấu hình — bỏ qua phần gọi API thật)"))
