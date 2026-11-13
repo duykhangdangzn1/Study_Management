@@ -1,0 +1,86 @@
+132 INFO: PyInstaller: 6.22.3, contrib hooks: 2026.8
+132 INFO: Python: 3.12.2
+167 INFO: Platform: Windows-11-10.0.26100-SP0
+167 INFO: Python environment: C:\Program Files\Python312
+169 INFO: Removing temporary files and cleaning cache in C:\Users\khang\AppData\Local\pyinstaller
+176 INFO: Module search paths (PYTHONPATH):
+['C:\\Users\\khang\\.config\\freebuff-desktop\\local-projects\\37e84555-99b6-4d05-bf1b-07d2b04faff9\\threads\\d666e7eefceccb80399abdcd6c13976fde797175d5561a2578a6b114bc93dafd\\app_src',
+ 'C:\\Program Files\\Python312\\python312.zip',
+ 'C:\\Program Files\\Python312\\DLLs',
+ 'C:\\Program Files\\Python312\\Lib',
+ 'C:\\Program Files\\Python312',
+ 'C:\\Users\\khang\\AppData\\Roaming\\Python\\Python312\\site-packages',
+ 'C:\\Program Files\\Python312\\Lib\\site-packages',
+ 'C:\\Users\\khang\\.config\\freebuff-desktop\\local-projects\\37e84555-99b6-4d05-bf1b-07d2b04faff9\\threads\\d666e7eefceccb80399abdcd6c13976fde797175d5561a2578a6b114bc93dafd\\app_src\\app']
+558 INFO: Appending 'datas' from .spec
+559 INFO: checking Analysis
+559 INFO: Building Analysis because Analysis-00.toc is non existent
+559 INFO: Looking for Python shared library...
+559 INFO: Using Python shared library: C:\Program Files\Python312\python312.dll
+559 INFO: Running Analysis Analysis-00.toc
+559 INFO: Target bytecode optimization level: 0
+559 INFO: Initializing module dependency graph...
+561 INFO: Initializing module graph hook caches...
+574 INFO: Analyzing modules for base_library.zip ...
+1618 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\khang\\AppData\\Roaming\\Python\\Python312\\site-packages\\PyInstaller\\hooks'
+1682 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\khang\\AppData\\Roaming\\Python\\Python312\\site-packages\\PyInstaller\\hooks'
+2781 INFO: Processing standard module hook 'hook-math.py' from 'C:\\Users\\khang\\AppData\\Roaming\\Python\\Python312\\site-packages\\PyInstaller\\hooks'
+2925 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\khang\\AppData\\Roaming\\Python\\Python312\\site-packages\\PyInstaller\\hooks'
+4054 INFO: Caching module dependency graph...
+4087 INFO: Analyzing C:\Users\khang\.config\freebuff-desktop\local-projects\37e84555-99b6-4d05-bf1b-07d2b04faff9\threads\d666e7eefceccb80399abdcd6c13976fde797175d5561a2578a6b114bc93dafd\app_src\app\main.py
+4204 INFO: Processing standard module hook 'hook-PySide6.py' from 'C:\\Users\\khang\\AppData\\Roaming\\Python\\Python312\\site-packages\\PyInstaller\\hooks'
+4387 INFO: Processing standard module hook 'hook-shiboken6.py' from 'C:\\Users\\khang\\AppData\\Roaming\\Python\\Python312\\site-packages\\PyInstaller\\hooks'
+4816 INFO: Processing standard module hook 'hook-PySide6.QtCore.py' from 'C:\\Users\\khang\\AppData\\Roaming\\Python\\Python312\\site-packages\\PyInstaller\\hooks'
+8786 INFO: Processing standard module hook 'hook-PySide6.QtGui.py' from 'C:\\Users\\khang\\AppData\\Roaming\\Python\\Python312\\site-packages\\PyInstaller\\hooks'
+31663 INFO: Processing standard module hook 'hook-PySide6.QtWidgets.py' from 'C:\\Users\\khang\\AppData\\Roaming\\Python\\Python312\\site-packages\\PyInstaller\\hooks'
+36336 INFO: Processing standard module hook 'hook-PySide6.QtSvg.py' from 'C:\\Users\\khang\\AppData\\Roaming\\Python\\Python312\\site-packages\\PyInstaller\\hooks'
+37294 INFO: Processing standard module hook 'hook-_ctypes.py' from 'C:\\Users\\khang\\AppData\\Roaming\\Python\\Python312\\site-packages\\PyInstaller\\hooks'
+37298 INFO: Processing module hooks (post-graph stage)...
+37304 INFO: Performing binary vs. data reclassification (130 entries)
+37318 INFO: Looking for ctypes DLLs
+37344 INFO: Analyzing run-time hooks ...
+37345 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Users\\khang\\AppData\\Roaming\\Python\\Python312\\site-packages\\PyInstaller\\hooks\\rthooks'
+37347 INFO: Including run-time hook 'pyi_rth_pyside6.py' from 'C:\\Users\\khang\\AppData\\Roaming\\Python\\Python312\\site-packages\\PyInstaller\\hooks\\rthooks'
+37348 INFO: Processing pre-find-module-path hook 'hook-_pyi_rth_utils.py' from 'C:\\Users\\khang\\AppData\\Roaming\\Python\\Python312\\site-packages\\PyInstaller\\hooks\\pre_find_module_path'
+37350 INFO: Processing standard module hook 'hook-_pyi_rth_utils.py' from 'C:\\Users\\khang\\AppData\\Roaming\\Python\\Python312\\site-packages\\PyInstaller\\hooks'
+37357 INFO: Creating base_library.zip...
+37372 INFO: Looking for dynamic libraries
+37614 INFO: Extra DLL search directories (AddDllDirectory): ['C:\\Users\\khang\\AppData\\Roaming\\Python\\Python312\\site-packages\\shiboken6']
+37614 INFO: Extra DLL search directories (PATH): ['C:\\Users\\khang\\AppData\\Roaming\\Python\\Python312\\site-packages\\PySide6']
+38263 INFO: Warnings written to C:\Users\khang\.config\freebuff-desktop\local-projects\37e84555-99b6-4d05-bf1b-07d2b04faff9\threads\d666e7eefceccb80399abdcd6c13976fde797175d5561a2578a6b114bc93dafd\app_src\build\TinHocXayDung\warn-TinHocXayDung.txt
+38278 INFO: Graph cross-reference written to C:\Users\khang\.config\freebuff-desktop\local-projects\37e84555-99b6-4d05-bf1b-07d2b04faff9\threads\d666e7eefceccb80399abdcd6c13976fde797175d5561a2578a6b114bc93dafd\app_src\build\TinHocXayDung\xref-TinHocXayDung.html
+38295 INFO: checking PYZ
+38295 INFO: Building PYZ because PYZ-00.toc is non existent
+38295 INFO: Building PYZ (ZlibArchive) C:\Users\khang\.config\freebuff-desktop\local-projects\37e84555-99b6-4d05-bf1b-07d2b04faff9\threads\d666e7eefceccb80399abdcd6c13976fde797175d5561a2578a6b114bc93dafd\app_src\build\TinHocXayDung\PYZ-00.pyz
+38454 INFO: Building PYZ (ZlibArchive) C:\Users\khang\.config\freebuff-desktop\local-projects\37e84555-99b6-4d05-bf1b-07d2b04faff9\threads\d666e7eefceccb80399abdcd6c13976fde797175d5561a2578a6b114bc93dafd\app_src\build\TinHocXayDung\PYZ-00.pyz completed successfully.
+38460 INFO: checking PKG
+38460 INFO: Building PKG because PKG-00.toc is non existent
+38460 INFO: Building PKG (CArchive) QuanLyHocPhan_TinHocXayDung_AI.pkg
+47717 INFO: Building PKG (CArchive) QuanLyHocPhan_TinHocXayDung_AI.pkg completed successfully.
+47721 INFO: Bootloader C:\Users\khang\AppData\Roaming\Python\Python312\site-packages\PyInstaller\bootloader\Windows-64bit-intel\runw.exe
+47721 INFO: checking EXE
+47721 INFO: Building EXE because EXE-00.toc is non existent
+47721 INFO: Building EXE from EXE-00.toc
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\khang\AppData\Roaming\Python\Python312\site-packages\PyInstaller\__main__.py", line 321, in <module>
+    run()
+  File "C:\Users\khang\AppData\Roaming\Python\Python312\site-packages\PyInstaller\__main__.py", line 215, in run
+    run_build(pyi_config, spec_file, **vars(args))
+  File "C:\Users\khang\AppData\Roaming\Python\Python312\site-packages\PyInstaller\__main__.py", line 70, in run_build
+    PyInstaller.building.build_main.main(pyi_config, spec_file, **kwargs)
+  File "C:\Users\khang\AppData\Roaming\Python\Python312\site-packages\PyInstaller\building\build_main.py", line 1275, in main
+    build(specfile, distpath, workpath, clean_build)
+  File "C:\Users\khang\AppData\Roaming\Python\Python312\site-packages\PyInstaller\building\build_main.py", line 1213, in build
+    exec(code, spec_namespace)
+  File "TinHocXayDung.spec", line 26, in <module>
+    exe = EXE(
+          ^^^^
+  File "C:\Users\khang\AppData\Roaming\Python\Python312\site-packages\PyInstaller\building\api.py", line 675, in __init__
+    self.__postinit__()
+  File "C:\Users\khang\AppData\Roaming\Python\Python312\site-packages\PyInstaller\building\datastruct.py", line 184, in __postinit__
+    self.assemble()
+  File "C:\Users\khang\AppData\Roaming\Python\Python312\site-packages\PyInstaller\building\api.py", line 769, in assemble
+    os.remove(self.name)
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\khang\\.config\\freebuff-desktop\\local-projects\\37e84555-99b6-4d05-bf1b-07d2b04faff9\\threads\\d666e7eefceccb80399abdcd6c13976fde797175d5561a2578a6b114bc93dafd\\app_src\\dist\\QuanLyHocPhan_TinHocXayDung_AI.exe'

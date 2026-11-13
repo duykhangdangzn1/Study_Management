@@ -1,0 +1,46 @@
+# -*- mode: python ; coding: utf-8 -*-
+# Đóng gói MỘT file .exe duy nhất (onefile) – Python 3.10+, PySide6.
+a = Analysis(
+    ["app/main.py"],
+    pathex=["app"],
+    binaries=[],
+    datas=[("app/assets", "assets")],
+    hiddenimports=["PySide6.QtSvg"],
+    hookspath=[],
+    runtime_hooks=[],
+    excludes=[
+        "tkinter",
+        "unittest",
+        "PySide6.QtQml",
+        "PySide6.QtQuick",
+        "PySide6.QtQuickWidgets",
+        "PySide6.QtNetwork",
+        "PySide6.QtDBus",
+        "PySide6.QtTest",
+        "PySide6.QtWebEngineCore",
+        "PySide6.QtWebEngineWidgets",
+    ],
+    noarchive=False,
+)
+pyz = PYZ(a.pure, a.zipped_data)
+exe = EXE(
+    pyz,
+    a.scripts,
+    a.binaries,
+    a.zipfiles,
+    a.datas,
+    [],
+    name="QuanLyHocPhan_TinHocXayDung_AI",
+    debug=False,
+    bootloader_ignore_signals=False,
+    strip=False,
+    upx=False,
+    runtime_tmpdir=None,
+    console=False,
+    disable_windowed_traceback=False,
+    argv_emulation=False,
+    target_arch=None,
+    codesign_identity=None,
+    entitlements_file=None,
+    icon="app/assets/app.ico",
+)

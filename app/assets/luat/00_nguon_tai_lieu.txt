@@ -1,0 +1,26 @@
+TÀI LIỆU QUY CHẾ CỦA TRƯỜNG (bản trích phục vụ tra cứu trong phần mềm)
+=====================================================================
+
+Thư mục này chứa bản trích nội dung các văn bản quy chế do thầy gửi, dùng để trợ lý AI
+tra cứu và trích dẫn khi trả lời câu hỏi của sinh viên.
+
+Danh sách văn bản:
+1. qd2244_dao_tao.txt     – QĐ 2244/QĐ-ĐHBK (2021): Quy định đào tạo trình độ đại học
+                            (Điều 7 đăng ký học phần, Điều 12 cảnh báo kết quả học tập,
+                             Điều 14 công nhận tín chỉ, Điều 15 đồ án tốt nghiệp,
+                             Điều 17 xét tốt nghiệp).
+2. qd4511_ngoai_ngu.txt   – QĐ 4511/QĐ-ĐHBK (2022): Yêu cầu năng lực ngoại ngữ
+                            (thay thế QĐ 389/2016).
+3. qd417_cntt.txt         – QĐ 417/QĐ-ĐHBK (2016): Chuẩn kỹ năng sử dụng CNTT
+                            (6 mô-đun IU01–IU06 theo TT 03/2014/TT-BTTTT).
+4. qd029_liem_chinh.txt   – QĐ 029/QĐ-ĐHBK (2017) và QĐ 1274/QĐ-ĐHBK (2019):
+                            Quy định liêm chính học thuật.
+5. qd1414_hoc_bong.txt    – QĐ 1414/QĐ-ĐHBK (2021): Xét, cấp học bổng khuyến khích học tập.
+
+Ghi chú kỹ thuật:
+- Ba văn bản 2244, 4511, 1414 được trích tự động bằng pdftotext từ bản PDF gốc.
+- Hai văn bản 417 và 029 là bản scan không có lớp văn bản, nội dung được gõ lại từ ảnh scan
+  (giữ nguyên số điều, khoản, mô-đun).
+- QĐ 389/2016 về chuẩn tiếng Anh đã được QĐ 4511/2022 thay thế nên không dùng để tư vấn.
+- Toàn bộ con số dùng để tính toán nằm trong app/rules.py; tệp ở đây là nguồn trích dẫn
+  nguyên văn cho phần hỏi đáp.
