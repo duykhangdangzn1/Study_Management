@@ -46,7 +46,10 @@ section("1. Cấu hình ONLINE API mặc định")
 cfg = load_api_config()
 check(cfg["base_url"] == "http://127.0.0.1:31415/v1", f"BASE_URL = {cfg['base_url']}")
 check(cfg["model"] == "auto:smart", f"MODEL = {cfg['model']}")
-check(cfg["api_key"] == ai_engine.AI_API_KEY, "Khoá API đọc từ biến môi trường / tệp cục bộ, không nhúng trong mã nguồn")
+check("freellmapi-" not in open(ai_engine.__file__, encoding="utf-8").read(),
+      "Mã nguồn không nhúng khoá API")
+check(cfg["api_key"] == ai_engine.AI_API_KEY,
+      "Khoá lấy từ biến môi trường / tệp cục bộ" + ("" if ai_engine.AI_API_KEY else " (chưa cấu hình — bỏ qua phần gọi API thật)"))
 check(chat_endpoint("http://127.0.0.1:31415/v1") == "http://127.0.0.1:31415/v1/chat/completions",
       "Chuẩn hoá endpoint khi base kết thúc /v1")
 check(chat_endpoint("http://host:1234") == "http://host:1234/v1/chat/completions",
@@ -181,7 +184,7 @@ def boom(*a, **k):
     raise AIError("Lỗi mô phỏng")
 
 
-client_bad = AIClient()
+client_bad = AIClient({"api_key": "k-test-123", "base_url": ai_engine.AI_BASE_URL})
 client_bad._request = boom
 client_bad.chat([{"role": "user", "content": "x"}], lambda t: got.setdefault("ok", t),
                 lambda e: got.setdefault("err", e))
