@@ -124,8 +124,8 @@ Markdown render → bong bóng chat → lưu lịch sử phiên
 Yêu cầu: **Python 3.10+**, Windows 10/11 (chạy được trên Linux/macOS nếu có driver Qt).
 
 ```bash
-git clone https://github.com/duykhangdangzn1/quan-ly-hoc-phan-tin-hoc-xay-dung-ai.git
-cd quan-ly-hoc-phan-tin-hoc-xay-dung-ai
+git clone https://github.com/duykhangdangzn1/Study_Management.git
+cd Study_Management
 
 python -m venv .venv
 .venv\Scripts\activate          # Windows
